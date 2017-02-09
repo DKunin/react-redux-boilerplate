@@ -1,7 +1,5 @@
 const InitialState = () => {
-	return {
-		app: {},
-	}
-}
+    return { app: {} };
+};
 
-export default InitialState
+export default InitialState;

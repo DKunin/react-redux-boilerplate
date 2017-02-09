@@ -1,7 +1,5 @@
-export const ActionTypesApp = {
-  RESET: 'RESET'
-}
+export const ActionTypesApp = { RESET: 'RESET' };
 
-const ActionTypes = Object.assign({}, ActionTypesApp)
+const ActionTypes = Object.assign({}, ActionTypesApp);
 
-export default ActionTypes
+export default ActionTypes;

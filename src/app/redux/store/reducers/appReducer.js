@@ -1,18 +1,16 @@
-import InitialState from '../initialState'
-import { ActionTypesApp } from '../../actions/actionTypes'
+import InitialState from '../initialState';
+import { ActionTypesApp } from '../../actions/actionTypes';
 
-const {
-  RESET
-} = ActionTypesApp
+const { RESET } = ActionTypesApp;
 
 const AppReducer = (state, action) => {
-  switch (action.type) {
-    case RESET:
-      return InitialState().app
-      break
-    default:
-      return state || InitialState().app
-  }
-}
+    switch (action.type) {
+        case RESET:
+            return InitialState().app;
+            break;
+        default:
+            return state || InitialState().app;
+    }
+};
 
-export default AppReducer
+export default AppReducer;

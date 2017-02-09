@@ -1,5 +1,5 @@
-import AppActions from "./appActions"
+import AppActions from './appActions';
 
-const Actions = Object.assign({}, AppActions)
+const Actions = Object.assign({}, AppActions);
 
-export default Actions
+export default Actions;

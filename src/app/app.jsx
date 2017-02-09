@@ -6,11 +6,11 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './redux/store';
 
-import createHistory from 'history/lib/createHashHistory';
-import { useQueries } from 'history';
+import createHistory from 'history/createBrowserHistory'
+// import { useQueries } from 'history';
 import InitialState from './redux/store/initialState';
 
-const history = useQueries(createHistory)();
+const history = createHistory();
 const Store = configureStore(InitialState(), history);
 
 ReactDOM.render(
