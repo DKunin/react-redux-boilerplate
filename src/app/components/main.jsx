@@ -14,15 +14,10 @@ class Main extends React.Component {
 }
 
 Main.propTypes = {
-  days: PropTypes.array.isRequired
 }
 
 const mapStateToProps = (state) => {
-  const { days, tasks } = state.app;
-  return {
-    days,
-    tasks
-  }
+  return state.app
 }
 
 const mapDispatchToProps = (dispatch) => {
